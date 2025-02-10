@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Dev | Data Analyzer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/tags.css">
+<link rel="stylesheet" href="/static/css/lay.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/lucide-static/font/lucide.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+</head>
+<body>
+    <div id="progress-bar"></div>
+    <div class="blob"></div>
+    <section class="main">
+        <div class="left">
+            <div class="profile-info">
+                <h2>Sebastián Cardona</h2>
+                <h4>Software Engineer</h4>
+                <p>I design and implement solutions to problems that denote a need or discomfort for the user.</p>
+            </div>
+            <ul class="social-media">
+                <li>
+                    <a href="#" id="link" target="_blank" >
+                        <i class="fa-brands fa-linkedin" id="icon"></i>
+                    </a>
+                </li>
+                <li>
+                    <a  href="https://medium.com/@franchisium" target="_blank">
+                        <i class="fa-brands fa-medium"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.com/franchisium" id="link" target="_blank">
+                        <i class="fa-brands fa-square-x-twitter" id="icon"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/franchisium" id="link" target="_blank">
+                        <i class="fa-brands fa-github" id="icon"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="contact">
+                <div class="cv">
+                    <a href="/static/files/myCv.pdf" download="cv_cardona">
+                        CV
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down-to-line"><path d="M12 17V3"/><path d="m6 11 6 6 6-6"/><path d="M19 21H5"/></svg>
+                    </a>
+                </div>
+                <div class="mail">
+                    <a href="mailto:scarrdona@gmail.com">
+                        Email me
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-arrow-out-up-right"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/></svg>
+                    </a>
+                </div>
+            </div>
+            <nav class="navigation">
+                <a id="nav" href="#bio">Bout me</a>
+                <a id="nav" href="#knowledge">Knowledge</a>
+                <a id="nav" href="#projects">Projects</a>
+            </nav>
+        </div>
+        <div class="right">
+            <div class="biography" id="bio" >
+                <p>Focused on <strong>data analysis and visualization</strong> and the <strong>development of user-centered websites</strong> 
+                    backed by statistical insights such as needs, comfort, and usability. 
+                    A critical part of my professional work is grounded in analyzing raw data with a critical mindset,
+                     transforming it into valuable information that drives informed decision-making.</p>
+                <p>On a personal note, I am passionate about football, having played it at a competitive level. 
+                    I also have a strong interest in fashion, enjoying the challenge of adapting my style to different situations, 
+                    much like the thoughtful language I use to communicate effectively. 
+                    I love exploring new technologies, not only to enhance 
+                    my professional work but also as a source of enjoyment in my free time.</p>
+            </div>
+
+            <div class="skill content-card" id="knowledge">
+                <ul class="skills-list">
+                    <li class="skills-item">
+                        <div class="title-wrapper">
+                            <h3>PYTHON3</h3>
+                            <img src="/static/icons-skills/Python.svg" alt="">
+                            
+                        </div>
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 65%;"></div>
+                        </div>
+                    </li>
+                    <li class="skills-item">
+                        <div class="title-wrapper">
+                            <h3>JAVASCRIPT</h3>
+                            <img src="/static/icons-skills/JavaScript.svg" alt="">
+                            
+                        </div>
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 50%;"></div>
+                        </div>
+                    </li>
+                    <li class="skills-item">
+                        <div class="title-wrapper">
+                            <h3>DATA ANALYSIS</h3>
+                            <img src="/static/icons-skills/Pandas.svg" alt="">
+                            <img src="/static/icons-skills/powerbi.svg" alt="">
+                            <img src="/static/icons-skills/Streamlit.svg" alt="">
+                            <img src="/static/icons-skills/Matplotlib.svg" alt="">
+                            <img src="/static/icons-skills/SQLite.svg" alt="">
+                            <img src="/static/icons-skills/MySQL.svg" alt="">
+                        </div>
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 60%;"></div>
+                        </div>
+                    </li>
+                    <li class="skills-item">
+                        <div class="title-wrapper">
+                            <h3>WEB DEVELOPMENT</h3>
+                            <img src="/static/icons-skills/HTML5.svg" alt="">
+                            <img src="/static/icons-skills/CSS3.svg" alt="">
+                            <img src="/static/icons-skills/JavaScript.svg" alt="">
+                            <img src="/static/icons-skills/flask-light.svg" alt="">
+                            <img src="/static/icons-skills/chartjs.svg" alt="">
+                            
+                        </div>
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 60%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+  
+        <article class="projects" id="projects">
+            <div class="gallery">
+                <h5>Dashboard: Tendencia Migratoria Colombiana</h5>
+                <a href="/static/img/migracionI.png">
+                    <img src="/static/img/migracionI.png" alt="">
+                </a>
+                <a href="/static/img/migracionII.png">
+                    <img src="/static/img/migracionII.png" alt="">
+                </a>
+                <a href="/static/img/migracionIII.png">
+                    <img src="/static/img/migracionIII.png" alt="">
+                </a>
+                <a href="/static/img/migracionIV.png">
+                    <img src="/static/img/migracionIV.png" alt="">
+                </a>
+            </div>
+            <div class="gallery">
+                <h5>Dashboard: Accidentes Nacionales por Municipio</h5>
+                <a href="/static/img/accidentes.png">
+                    <img src="/static/img/accidentes.png" alt="">
+                </a>
+            </div>
+            <div class="gallery">
+                <h5>Monitoreo de Humo con MQTT ESP32 y Flask</h5>
+            </div>
+        </article>
+    </section>
+    
+    <script>
+        const cursor = document.querySelector('.blob');
+
+        document.addEventListener('mousemove', function(e) {
+            requestAnimationFrame(() => {
+                const x = e.clientX;
+                const y = e.clientY;
+            
+                cursor.style.transform = `translate(calc(${x}px - 50%), calc(${y}px - 50%))`;
+            });
+        });
+    </script>
+</body>
+</html>
