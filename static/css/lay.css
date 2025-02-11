@@ -238,6 +238,10 @@ body {
         width: 100%;
         margin-left: 0;
     }
+
+    .cv, .mail {
+        font-size: 1.1rem;
+    }
 }
 
 .gallery {
