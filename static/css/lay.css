@@ -217,33 +217,6 @@ body {
 }
 
 
-@media (max-width: 768px) {
-    .main {
-        grid-template-columns: 1fr;
-    }
-    
-    .left {
-        position: relative;
-        top: auto;
-        left: auto;
-        width: 100%;
-    }
-    
-    .right {
-        margin-left: 0;
-    }
-
-    .right {
-        grid-column: 1;
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .cv, .mail {
-        font-size: 1.1rem;
-    }
-}
-
 .gallery {
     display: flex;
     justify-content: flex-start;
@@ -281,4 +254,54 @@ body {
 
 .gallery a:hover img {
     transform: scale(1.1);
+}
+
+
+@media (max-width: 767px) {
+    .main {
+        grid-template-columns: 1fr;
+    }
+    
+    .left {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+    }
+    
+    .right {
+        margin-left: 0;
+    }
+
+    .right {
+        grid-column: 1;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .cv, .mail {
+        font-size: 1.2rem;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 0.95em; /* Reduced by 0.05em */
+      }
+    
+      /* Center h2, align other text to the left */
+      h2 {
+        text-align: center;
+      }
+    
+      p, span, div, li {
+        text-align: left;
+      }
+    
+      /* Disable pseudo-elements */
+      *::before, *::after {
+        display: none !important;
+      }
+    
+      /* Disable hover states */
+      *:hover {
+        all: unset !important;
+      }
 }
