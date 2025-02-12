@@ -257,7 +257,7 @@ body {
 }
 
 
-@media (max-width: 767px) {
+@media screen and (max-width: 600px) {
     .main {
         grid-template-columns: 1fr;
     }
@@ -282,26 +282,6 @@ body {
     .cv, .mail {
         font-size: 1.2rem;
     }
-    h1, h2, h3, h4, h5, h6 {
-        font-size: 0.95em; /* Reduced by 0.05em */
-      }
-    
-      /* Center h2, align other text to the left */
-      h2 {
-        text-align: center;
-      }
-    
-      p, span, div, li {
-        text-align: left;
-      }
-    
-      /* Disable pseudo-elements */
-      *::before, *::after {
-        display: none !important;
-      }
-    
-      /* Disable hover states */
-      *:hover {
-        all: unset !important;
-      }
+
+
 }
