@@ -216,7 +216,6 @@ body {
     }
 }
 
-
 .gallery {
     display: flex;
     justify-content: flex-start;
@@ -225,7 +224,7 @@ body {
     width: 100%;
     margin: 0 auto;
     gap: 15px;
-    padding: 80px 0px;
+    padding: 70px 0px;
 }
 
 .gallery a {
@@ -256,7 +255,6 @@ body {
     transform: scale(1.1);
 }
 
-
 @media screen and (max-width: 600px) {
     .main {
         grid-template-columns: 1fr;
@@ -281,6 +279,34 @@ body {
 
     .cv, .mail {
         font-size: 1.2rem;
+    }
+    .gallery {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-flow: row wrap;
+        width: 100%;
+        margin: 0 auto;
+        gap: 15px;
+        padding: 70px 0px;
+    }
+    
+    .gallery a {
+        height: 300px;
+        width: 800px;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        position: relative;
+        display: block;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .gallery a img {
+        height: 95%;
+        width: 95%;
+        transition: transform 0.3s ease;
+        display: block;
     }
 
 
