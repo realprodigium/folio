@@ -288,25 +288,22 @@ body {
         width: 100%;
         margin: 0 auto;
         gap: 15px;
-        padding: 70px 0px;
+        padding: 60px 0px;
     }
     
     .gallery a {
-        height: 300px;
-        width: 800px;
+        height: auto;
+        width: auto;
         border-radius: 5px;
         overflow: hidden;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-        position: relative;
-        display: block;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     
     .gallery a img {
-        height: 95%;
-        width: 95%;
+        height: 100%;
+        width: 100%;
         transition: transform 0.3s ease;
-        display: block;
     }
 
 
