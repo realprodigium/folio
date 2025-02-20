@@ -1,0 +1,90 @@
+{
+    "en": {
+      "profile": {
+        "title": "Sebastián Cardona",
+        "subtitle": "Software Engineer",
+        "description": "I design and implement solutions to problems that denote a need or discomfort for the user."
+      },
+      "navigation": {
+        "aboutMe": "Bout me",
+        "knowledge": "Knowledge",
+        "projects": "Projects"
+      },
+      "contact": {
+        "cv": "CV",
+        "email": "Email me"
+      },
+      "biography": {
+        "professional": "Focused on <strong>data analysis and visualization</strong> and the <strong>development of user-centered websites</strong> backed by statistical insights such as needs, comfort, and usability. A critical part of my professional work is grounded in analyzing raw data with a critical mindset, transforming it into valuable information that drives informed decision-making.",
+        "personal": "On a personal note, I am passionate about football, having played it at a competitive level. I also have a strong interest in fashion, enjoying the challenge of adapting my style to different situations, much like the thoughtful language I use to communicate effectively. I love exploring new technologies, not only to enhance my professional work but also as a source of enjoyment in my free time."
+      },
+      "skills": {
+        "python": "PYTHON3",
+        "javascript": "JAVASCRIPT",
+        "dataAnalysis": "DATA ANALYSIS",
+        "webDevelopment": "WEB DEVELOPMENT"
+      },
+      "projects": {
+        "cancer": {
+          "title": "Cancer Issue",
+          "description": "Patients distribution and classification in United States. Discover how correlation different items that affects a patient."
+        },
+        "accidents": {
+          "title": "Accidents Rurals",
+          "description": "Know the consequences of natural and unnatural accidents in Colombia"
+        },
+        "migration": {
+          "title": "Col Migration",
+          "description": "What are the factors that motivate Colombians to watch? Know your distribution"
+        },
+        "eda": {
+          "title": "Automate EDA",
+          "description": "Application in streamlit, save time in the EDA for your analyzes"
+        }
+      }
+    },
+    "es": {
+      "profile": {
+        "title": "Sebastián Cardona",
+        "subtitle": "Ingeniero de Software",
+        "description": "Diseño e implemento soluciones a problemas que denotan una necesidad o incomodidad para el usuario."
+      },
+      "navigation": {
+        "aboutMe": "Sobre mí",
+        "knowledge": "Conocimientos",
+        "projects": "Proyectos"
+      },
+      "contact": {
+        "cv": "CV",
+        "email": "Contáctame"
+      },
+      "biography": {
+        "professional": "Enfocado en el <strong>análisis y visualización de datos</strong> y el <strong>desarrollo de sitios web centrados en el usuario</strong> respaldados por información estadística sobre necesidades, comodidad y usabilidad. Una parte crítica de mi trabajo profesional se basa en analizar datos crudos con una mentalidad crítica, transformándolos en información valiosa que impulsa la toma de decisiones informadas.",
+        "personal": "En lo personal, soy un apasionado del fútbol, habiéndolo jugado a nivel competitivo. También tengo un gran interés por la moda, disfrutando del reto de adaptar mi estilo a diferentes situaciones, al igual que el lenguaje reflexivo que utilizo para comunicarme eficazmente. Me encanta explorar nuevas tecnologías, no solo para mejorar mi trabajo profesional sino también como fuente de disfrute en mi tiempo libre."
+      },
+      "skills": {
+        "python": "PYTHON3",
+        "javascript": "JAVASCRIPT",
+        "dataAnalysis": "ANÁLISIS DE DATOS",
+        "webDevelopment": "DESARROLLO WEB"
+      },
+      "projects": {
+        "cancer": {
+          "title": "Problema del Cáncer",
+          "description": "Distribución y clasificación de pacientes en Estados Unidos. Descubre cómo se correlacionan diferentes factores que afectan a un paciente."
+        },
+        "accidents": {
+          "title": "Accidentes Rurales",
+          "description": "Conoce las consecuencias de los accidentes naturales y no naturales en Colombia"
+        },
+        "migration": {
+          "title": "Migración Colombiana",
+          "description": "¿Cuáles son los factores que motivan a los colombianos a emigrar? Conoce su distribución"
+        },
+        "eda": {
+          "title": "Automate EDA",
+          "description": "Aplicación en Streamlit, ahorra tiempo en el Análisis Exploratorio de Datos para tus análisis"
+        }
+      }
+    }
+  }

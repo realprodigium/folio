@@ -42,6 +42,36 @@ body {
   transform: translate(calc(-50% + 15px), -50%);
   z-index: -1;
 }
+/* .flags {
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    gap: 15px;
+}
+.flags__item {
+    width: 20px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.flags__item:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.flags__item.active {
+    opacity: 1;
+    transform: scale(1.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+.flags__img {
+    cursor: pointer;
+    display: block;
+} */
 .main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -68,9 +98,6 @@ body {
 .right .projects {
     width: 100%;
     margin-bottom: 2rem;
-}
-.biography {
-    margin-top: 30px;
 }
 
 

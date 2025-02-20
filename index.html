@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Dev | Data Analyzer</title>
+    <meta name="description" content="Ingeniero de Software enfocado en el Big Data">
+    <meta name="robots" content="index, follow">
+    <link rel="preload" href="..." as="...">
+    <meta property="og:description" content="Portfolio Sebastián">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/static/css/tags.css">
 <link rel="stylesheet" href="/static/css/lay.css">
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/lucide-static/font/lucide.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
 <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon_io/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
@@ -22,6 +25,14 @@
 <body>
     <div id="progress-bar"></div>
     <div class="blob"></div>
+    <!-- <div class="flags" id="flags">
+        <div class="flags__item" data-language="es">
+            <img src="/static/svg/es.svg" alt="">
+        </div>
+        <div class="flags__item" data-language="en">
+            <img src="/static/svg/us.svg" alt="">
+        </div>
+    </div> -->
     <section class="main">
         <div class="left">
             <div class="profile-info">
@@ -203,27 +214,6 @@
             </div>
         </article>
     </section>
-    
-    <script>
-        const cursor = document.querySelector('.blob');
-
-        document.addEventListener('mousemove', function(e) {
-            requestAnimationFrame(() => {
-                const x = e.clientX;
-                const y = e.clientY;
-            
-                cursor.style.transform = `translate(calc(${x}px - 50%), calc(${y}px - 50%))`;
-            });
-        });
-
-        function disableBlobOnMobile() {
-            if ("ontouchstart" in window || navigator.maxTouchPoints) {
-                blob.style.display = "none"; 
-                document.removeEventListener("mousemove", updateBlobPosition);
-            }
-        }
-
-        disableBlobOnMobile();
-    </script>
+    <script src="/static/js/script.js"></script>
 </body>
 </html>
