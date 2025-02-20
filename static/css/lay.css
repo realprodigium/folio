@@ -99,6 +99,9 @@ body {
     width: 100%;
     margin-bottom: 2rem;
 }
+.right {
+    margin-top: 22px;
+}
 
 
 
@@ -199,7 +202,7 @@ body {
 .skill .title-wrapper {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap:8px;
     margin-bottom: 5px;
     display: flex;
     align-items: center;
