@@ -262,6 +262,7 @@ body {
 @media screen and (max-width: 600px) {
     .main {
         grid-template-columns: 1fr;
+        margin-top: 20px;
     }
     
     .left {
@@ -297,7 +298,7 @@ body {
     }
 
     .title-project p {
-        font-size: 14px; 
+        font-size: 16px; 
     }
 
     .img-project img {
