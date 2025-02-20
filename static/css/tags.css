@@ -71,10 +71,10 @@ strong {
 
 @media (max-width: 768px) {
     
-    h4 {
+    .profile-info h4, h4 {
         font-size: 20px;
     }
-    h2 {
+    .profile-info h2, h2 {
         font-size: 34px;
         text-align: center;
     }
@@ -85,12 +85,11 @@ strong {
         font-family: 'Inter';
     }
     h3, .title-wrapper h3 {
-        font-size: 16px;
+        font-size: 16px !important; 
         font-weight: 400;
     }
-    .profile-info h2 {
-        justify-content: center;
-        align-items: center;
+    .biography p {
+        font-size: 18px;
     }
 
 }
