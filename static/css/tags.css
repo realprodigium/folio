@@ -6,7 +6,7 @@ ul, li {
 }
 
 a {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     text-decoration: none;
     color: #ccc;
 }
@@ -69,6 +69,7 @@ strong {
 
 
 
+
 @media (max-width: 768px) {
     
     .profile-info h4, h4 {
@@ -81,8 +82,9 @@ strong {
     .profile-info p, p {
         font-size: 18px;
     }
-    a {
-        font-family: 'Inter';
+    .cv a, .mail a, .navigation a {
+        font-family: 'Roboto';
+        font-weight: 800;
     }
     h3, .title-wrapper h3 {
         font-size: 14px !important; 
