@@ -83,7 +83,7 @@ strong {
         font-size: 18px;
     }
     .cv a, .mail a, .navigation a {
-        font-family: 'Roboto';
+        font-family: 'Roboto', 'Inter', 'Lato', sans-serif;
         font-weight: 800;
     }
     h3, .title-wrapper h3 {
