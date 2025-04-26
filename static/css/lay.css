@@ -312,6 +312,7 @@ button:focus {
 .view-project:hover {
     background-color: #fff;
     transform: scale(1.05);
+    color: #000;
 }
 
 .project-info {
