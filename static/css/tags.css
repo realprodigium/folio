@@ -76,8 +76,7 @@ strong {
 .project-title {
     font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
 }
-
-/* Buttons and interactive elements */
+   
 button, .view-project, .skill-tag, .project-tag {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -86,13 +85,11 @@ button, .view-project, .skill-tag, .project-tag {
     font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
 }
 
-/* Focus states for accessibility */
 a:focus, button:focus, .skill-tag:focus, .project-tag:focus {
     outline: 2px solid #3482dc;
     outline-offset: 3px;
 }
 
-/* Content transitions */
 a, button, .project-card, .skill-tag, .project-tag, .skill-category, i {
     transition: all 300ms cubic-bezier(0.25, 0.1, 0.25, 1);
 }
