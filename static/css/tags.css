@@ -1,4 +1,3 @@
-
 ul, li {
     list-style: none;
     margin: 0;
@@ -6,16 +5,21 @@ ul, li {
 }
 
 a {
-    font-family: 'Inter', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
     text-decoration: none;
     color: #ccc;
+    transition: all 300ms cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+a:hover {
+    color: #fff;
 }
 
 i {
     color: #ccc;
     font-size: 1.8rem;
     border-radius: 8px;
-    transition: color 300ms;
+    transition: color 300ms cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 i:hover {
@@ -25,24 +29,27 @@ i:hover {
 
 h2 {
     font-size: 50px;
-    font-family: 'Roboto', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Roboto', sans-serif;
     font-weight: 600;
     margin: 0;
     padding: 0;
     color: #C5D1ED;
+    letter-spacing: -0.02em;
 }
 
 h4 {
     font-size: 28px;
-    font-family: 'Inter', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
     font-weight: 400;
     margin: 0 0 20px 0;
     color: #C4D1EC;
+    letter-spacing: -0.01em;
 }
 
 h3, .title-wrapper h3 {
-    font-family: 'Inter', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
     font-weight: 400;
+    letter-spacing: -0.01em;
 }
 
 p {
@@ -51,11 +58,14 @@ p {
     color: #ccc;
     margin: 0;
     padding: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
 }
 
 strong {
     color: #fff;
+    font-weight: 500;
 }
 
 .biography p {
@@ -64,36 +74,76 @@ strong {
 }
 
 .project-title {
-    font-family: 'Inter', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
 }
 
+/* Buttons and interactive elements */
+button, .view-project, .skill-tag, .project-tag {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
+}
 
+/* Focus states for accessibility */
+a:focus, button:focus, .skill-tag:focus, .project-tag:focus {
+    outline: 2px solid #3482dc;
+    outline-offset: 3px;
+}
 
+/* Content transitions */
+a, button, .project-card, .skill-tag, .project-tag, .skill-category, i {
+    transition: all 300ms cubic-bezier(0.25, 0.1, 0.25, 1);
+}
 
 @media (max-width: 768px) {
     section {
-        font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', system-ui, sans-serif;
     }
+    
     .profile-info h4, h4 {
         font-size: 20px;
     }
+    
     .profile-info h2, h2 {
         font-size: 34px;
         text-align: center;
     }
+    
     .profile-info p, p {
         font-size: 18px;
     }
+    
     .cv a, .mail a, .navigation a {
-        font-family: 'Roboto', 'Inter', 'Lato', sans-serif;
-        font-weight: 800;
+        font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Roboto', 'Inter', sans-serif;
+        font-weight: 600;
     }
+    
     h3, .title-wrapper h3 {
         font-size: 14px !important; 
         font-weight: 400;
     }
+    
     .biography p {
         font-size: 16px;
     }
+}
 
+@media (max-width: 480px) {
+    h2 {
+        font-size: 30px;
+    }
+    
+    h4 {
+        font-size: 18px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+    
+    i {
+        font-size: 1.5rem;
+    }
 }
