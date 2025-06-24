@@ -17,3 +17,71 @@ function disableBlobOnMobile() {
 }
 
 disableBlobOnMobile();
+
+document.addEventListener("DOMContentLoaded", () => {
+  const typewriter = document.querySelector(".typewriter")
+  const text = typewriter.dataset.text
+  let index = 0
+
+  function type() {
+    if (index < text.length) {
+      typewriter.textContent = text.slice(0, index + 1)
+      index++
+      setTimeout(type, 100)
+    }
+  }
+
+  setTimeout(type, 1000)
+
+  const progressBar = document.querySelector(".progress-bar")
+
+  function updateProgressBar() {
+    const scrollTop = window.pageYOffset
+    const docHeight = document.body.offsetHeight - window.innerHeight
+    const scrollPercent = (scrollTop / docHeight) * 100
+    progressBar.style.width = scrollPercent + "%"
+  }
+
+  window.addEventListener("scroll", updateProgressBar)
+
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px",
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.style.animationPlayState = "running"
+      }
+    })
+  }, observerOptions)
+
+  document.querySelectorAll(".fade-in, .slide-in").forEach((el) => {
+    el.style.animationPlayState = "paused"
+    observer.observe(el)
+  })
+
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault()
+      const target = document.querySelector(this.getAttribute("href"))
+      if (target) {
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        })
+      }
+    })
+  })
+
+  const skillTags = document.querySelectorAll(".skill-tag")
+  skillTags.forEach((tag, index) => {
+    tag.style.animationDelay = `${index * 0.1}s`
+  })
+
+  const projectCards = document.querySelectorAll(".project-card")
+  projectCards.forEach((card, index) => {
+    card.style.animationDelay = `${index * 0.2}s`
+  })
+})
