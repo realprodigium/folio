@@ -1,23 +1,3 @@
-const cursor = document.querySelector('.blob');
-
-document.addEventListener('mousemove', function(e) {
-    requestAnimationFrame(() => {
-        const x = e.clientX;
-        const y = e.clientY;
-    
-        cursor.style.transform = `translate(calc(${x}px - 50%), calc(${y}px - 50%))`;
-    });
-});
-
-function disableBlobOnMobile() {
-    if ("ontouchstart" in window || navigator.maxTouchPoints) {
-        blob.style.display = "none"; 
-        document.removeEventListener("mousemove", updateBlobPosition);
-    }
-}
-
-disableBlobOnMobile();
-
 document.addEventListener("DOMContentLoaded", () => {
   const typewriter = document.querySelector(".typewriter")
   const text = typewriter.dataset.text
@@ -43,6 +23,27 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   window.addEventListener("scroll", updateProgressBar)
+
+  const blob = document.querySelector(".blob")
+
+  function updateBlobPosition(e) {
+    requestAnimationFrame(() => {
+      const x = e.clientX
+      const y = e.clientY
+      blob.style.transform = `translate(calc(${x}px - 50%), calc(${y}px - 50%))`
+    })
+  }
+
+  function disableBlobOnMobile() {
+    if ("ontouchstart" in window || navigator.maxTouchPoints) {
+      blob.style.display = "none"
+      document.removeEventListener("mousemove", updateBlobPosition)
+    } else {
+      document.addEventListener("mousemove", updateBlobPosition)
+    }
+  }
+
+  disableBlobOnMobile()
 
   const observerOptions = {
     threshold: 0.1,
