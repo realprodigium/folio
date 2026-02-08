@@ -119,6 +119,9 @@ body {
   margin-bottom: 32px;
   font-weight: 500;
 }
+.icon svg {
+    stroke-width: 1.5;
+}
 
 .hero h1 {
   font-size: clamp(44px, 8vw, 90px);
