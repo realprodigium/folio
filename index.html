@@ -3,343 +3,360 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Data & Backend Engineer</title>
-    <link rel="shortcut icon" href="static\img\favicon-32x32.png" type="image/x-icon">
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <title>Sebastián Cardona — Backend & Data Engineer</title>
+    <link rel="shortcut icon" href="static/img/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="terminal-header">
-        <div class="terminal-dots">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
+
+    <nav class="nav">
+        <span class="nav-logo">prodigium</span>
+        <div class="nav-links">
+            <a href="#featured">Proyecto</a>
+            <a href="#capabilities">Capacidades</a>
+            <a href="#projects">Otros trabajos</a>
+            <a href="#contact" class="nav-cta">Contacto</a>
         </div>
-        <span class="terminal-path">~/portfolio/index.html</span>
-    </div>
+    </nav>
 
-    <div class="container">
-        <section class="hero">
-            <div class="data-flow">
-                <div>{"status": "active"}</div>
-                <div>{"pipeline": "running"}</div>
-                <div>{"data_processed": 1247}</div>
-                <div>{"api_requests": 342}</div>
-                <div>{"uptime": "99.9%"}</div>
-                <div>───────────────────</div>
-                <div>ETL -> Transform -> Load</div>
-                <div>Request -> Process -> Response</div>
-                <div>Recency -> Frequency -> Monetary Value (RFM)</div>
+    <section class="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-scan-line"></div>
+
+        <div class="hero-inner">
+            <div class="hero-status">
+                <span class="pulse-dot"></span>
+                <span>Disponible para trabajo · Colombia 🇨🇴</span>
             </div>
 
-            <div class="hero-content">
-                <div class="label">
-                    <i data-lucide="terminal" size="14"></i>
-                    <span>Software Engineer | APIs & Pipeline 🇨🇴</span>
-                </div>
+            <h1 class="hero-name">Sebastián<br>Cardona</h1>
 
-                <h1>
-                    <span class="gradient-text">Sebastián Cardona</span>
-                </h1>
-
-                <p class="hero-description">
-                    Especializado en transformar datos complejos en sistemas eficientes. 
-                    Enfoque en Backend Development, Data Engineering y arquitecturas escalables con Python.
-                </p>
-
-                <div class="stack-list">
-                    <div class="stack-item">Python | FastAPI & Pandas & Django</div>
-                    <div class="stack-item">PostgreSQL</div>
-                    <div class="stack-item">Power BI</div>
-                    <div class="stack-item">GCP</div>
-                </div>
-
-                <div class="cta-group">
-                    <a href="#projects" class="btn btn-primary">
-                        Ver proyectos
-                        <i data-lucide="arrow-right" size="16"></i>
-                    </a>
-                    <a href="#contact" class="btn btn-secondary">
-                        <i data-lucide="mail" size="16"></i>
-                        Contacto
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="section">
-            <div class="section-header">
-                <span class="section-number">[01]</span>
-                <h2 class="section-title">Proyectos</h2>
-                <div class="section-line"></div>
+            <div class="hero-role-line">
+                <span class="role-tag">Backend Developer</span>
+                <span class="role-sep">/</span>
+                <span class="role-tag">Data Engineer</span>
+                <span class="role-sep">/</span>
+                <span class="role-tag">Software Engineer</span>
             </div>
 
-            <div class="projects-pipeline">
-                <div class="project-card">
-                    <div class="project-meta">
-                        <div class="project-number">01</div>
-                        <div class="project-type">Data Pipeline</div>
-                        <div class="project-stats">
-                            <div class="stat-item">
-                                <span>records:</span>
-                                <span class="stat-value">~2M</span>
-                            </div>
-                            <div class="stat-item">
-                                <span>dataset:</span>
-                                <span class="stat-value">USA Real Estate Dataset</span>
-                            </div>
-                            <div class="stat-item">
-                                <span>size:</span>
-                                <span class="stat-value">~178mb</span>
-                            </div>
-                        </div>
+            <p class="hero-headline">
+                Construyo sistemas completos: desde firmware en hardware embebido
+                hasta APIs en producción, pipelines de datos y procesamiento de los mismos listos para uso diario.
+                No solo conozco las herramientas — las pongo a trabajar juntas.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#featured" class="btn-main">Ver proyecto principal</a>
+                <a href="#contact" class="btn-ghost">Contactar</a>
+            </div>
+        </div>
+
+        <div class="hero-metrics">
+            <div class="metric-item">
+                <span class="metric-val">2M+</span>
+                <span class="metric-label">registros procesados</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+                <span class="metric-val">3</span>
+                <span class="metric-label">capas de sistema IoT</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+                <span class="metric-val">VPS</span>
+                <span class="metric-label">desplegado en producción</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="featured" class="featured-section">
+        <div class="section-label">
+            <span class="label-num">PROYECTO PRINCIPAL</span>
+            <span class="label-tag">Proyecto de Grado · En producción</span>
+        </div>
+
+        <div class="featured-card">
+            <div class="featured-header">
+                <div class="featured-header-left">
+                    <div class="featured-status-bar">
+                        <span class="status-dot active"></span>
+                        <span class="status-text">Sistema activo · Broker MQTT en VPS · Supabase PostgreSQL</span>
                     </div>
-                    <div class="project-content">
-                        <h3>EDA para dominio inmobiliario</h3>
-                        <p>ETL sobre 2 millones de filas para obtener información e insights significativos sobre rentas de casas en diferentes estados de USA</p>
-                        <div class="tech-tags">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Power BI</span>
-                            <span class="tech-tag">Pandas</span>
-                            <span class="tech-tag">Seaborn</span>
-                            <span class="tech-tag">GCP Environment</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/realprodigium/US-Rentals" class="project-link">
-                                <i data-lucide="github" size="16"></i>
-                                Notebook
-                            </a>
-                            <!-- <a href="#" class="project-link">
-                                <i data-lucide="external-link" size="16"></i>
-                                Demo
-                            </a> -->
-                        </div>
+                    <h2 class="featured-title">Monitor de CO2 Portátil<br>para Cervecerías Artesanales</h2>
+                    <p class="featured-subtitle">Sistema de bajo costo para monitoreo remoto en tiempo real de dióxido de carbono durante la fermentación, escalable para predicciones a futuro</p>
+                </div>
+                <div class="featured-badge">
+                    <span class="badge-text">IoT + Web + Database</span>
+                </div>
+            </div>
+
+            <div class="arch-diagram">
+                <div class="arch-title">Arquitectura del sistema</div>
+                <div class="arch-flow">
+                    <div class="arch-node hardware">
+                        <div class="node-name">Hardware</div>
+                        <div class="node-detail">Sensor CO2 + MCU<br>Firmware C/Arduino IDE</div>
+                    </div>
+                    <div class="arch-arrow">
+                        <div class="arrow-label">MQTT</div>
+                        <div class="arrow-line">-></div>
+                    </div>
+                    <div class="arch-node broker">
+                        <div class="node-name">Broker</div>
+                        <div class="node-detail">EMQX en VPS<br>aiomqtt async</div>
+                    </div>
+                    <div class="arch-arrow">
+                        <div class="arrow-label">MQTT</div>
+                        <div class="arrow-line">-></div>
+                    </div>
+                    <div class="arch-node backend">
+                        <div class="node-name">Backend</div>
+                        <div class="node-detail">FastAPI + SQLAlchemy<br>PostgreSQL · Supabase</div>
+                    </div>
+
+                    <div class="arch-arrow">
+                        <div class="arrow-label">WebSockets</div>
+                        <div class="arrow-line">-></div>
+                    </div>
+                    <div class="arch-node web">
+                        <div class="node-name">Dashboard</div>
+                        <div class="node-detail">Monitoreo remoto<br>Alertas en tiempo real</div>
                     </div>
                 </div>
+            </div>
 
-                <div class="project-card">
-                    <div class="project-meta">
-                        <div class="project-number">02</div>
-                        <div class="project-type">Backend API X antes Twitter</div>
-                        <div class="project-stats">
-                            <div class="stat-item">
-                                <span>API:</span>
-                                <span class="stat-value">X API</span>
-                            </div>
-                            <div class="stat-item">
-                                <span>Auth:</span>
-                                <span class="stat-value">0Auth</span>
-                            </div>
-                            <div class="stat-item">
-                                <span>type:</span>
-                                <span class="stat-value">~fullstack</span>
-                            </div>
+            <div class="featured-capabilities">
+                <div class="cap-title">Qué construí en este proyecto</div>
+                <div class="cap-grid">
+                    <div class="cap-item">
+                        <span class="cap-check">✓</span>
+                        <div>
+                            <strong>Firmware para hardware embebido</strong>
+                            <span>Comunicación MQTT de bajo consumo desde el sensor al broker</span>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <h3>API Bookmarks Storage | MVP</h3>
-                        <p>Sistema REST API completo con autenticación JWT con X, CRUD operations, y arquitectura escalable. Documentación automática para la visualización de bookmarks de forma organizada productiva para areas de ciencias, ingenierías, finanzas y demás.</p>
-                        <div class="tech-tags">
-                            <span class="tech-tag">FastAPI</span>
-                            <span class="tech-tag">SQLAlchemy</span>
-                            <span class="tech-tag">PostgreSQL</span>
-                            <span class="tech-tag">JWT</span><!-- 
-                            <span class="tech-tag">Docker</span> -->
-                            <span class="tech-tag">X API DEV</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/realprodigium/whitebank" target="_blank" class="project-link">
-                                <i data-lucide="github" size="16"></i>
-                                Código
-                            </a><!-- 
-                            <a href="#" class="project-link">
-                                <i data-lucide="book-open" size="16"></i>
-                                Documentación
-                            </a> -->
+                    <div class="cap-item">
+                        <span class="cap-check">✓</span>
+                        <div>
+                            <strong>Pipeline MQTT → API en tiempo real</strong>
+                            <span>Ingestión asíncrona con aiomqtt, procesamiento y persistencia</span>
                         </div>
                     </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-meta">
-                        <div class="project-number">03</div>
-                        <div class="project-type">IoT + ML + Web</div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Sistema de monitoreo de co2 portatil y remoto (70%)</h3>
-                        <p>Ad Hoc robusto y de bajo consumo enfocado en cervecerías artesanales, para el monitoreo en tiempo real desde la Web por la concentración de dioxido de carbono dada la fermentación, incluye predicciones del futuro proximo sobre la condicion (riesgo/no riesgo) con XGBoost</p>
-                        <div class="tech-tags">
-                            <span class="tech-tag">FastAPI</span>
-                            <span class="tech-tag">Pandas</span>
-                            <span class="tech-tag">XGBoost Library</span>
-                            <span class="tech-tag">GCP</span>
-                            <span class="tech-tag">SQLAlchemy</span>
-                            <span class="tech-tag">EMQX</span>
-                            <span class="tech-tag">aiomqtt</span>
-                            <span class="tech-tag">PostgreSQL</span>
+                    <div class="cap-item">
+                        <span class="cap-check">✓</span>
+                        <div>
+                            <strong>API REST completa con autenticación</strong>
+                            <span>FastAPI + JWT, endpoints documentados, arquitectura escalable</span>
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i data-lucide="github" size="16"></i>
-                                Código
-                            </a><!-- 
-                            <a href="#" class="project-link">
-                                <i data-lucide="file-text" size="16"></i>
-                                Notebook
-                            </a> -->
+                    </div>
+                    <div class="cap-item">
+                        <span class="cap-check">✓</span>
+                        <div>
+                            <strong>Persistencia con SQLAlchemy + PostgreSQL</strong>
+                            <span>Modelos relacionales, queries optimizados, Supabase como cloud DB</span>
+                        </div>
+                    </div>
+                    <div class="cap-item">
+                        <span class="cap-check">✓</span>
+                        <div>
+                            <strong>WebSockets para streaming en vivo</strong>
+                            <span>Dashboard actualizado en tiempo real sin polling</span>
+                        </div>
+                    </div>
+                    <div class="cap-item">
+                        <span class="cap-check">✓</span>
+                        <div>
+                            <strong>Deploy en VPS (abril 15)</strong>
+                            <span>Broker EMQX + API en servidor propio, PostgreSQL en Supabase</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section id="skills" class="section">
-            <div class="section-header">
-                <span class="section-number">[02]</span>
-                <h2 class="section-title">Habilidades Técnicas</h2>
-                <div class="section-line"></div>
+            <div class="featured-stack">
+                <span>Stack:</span>
+                <span class="stk">FastAPI</span>
+                <span class="stk">SQLAlchemy</span>
+                <span class="stk">PostgreSQL · Supabase</span>
+                <span class="stk">XGBoost</span>
+                <span class="stk">EMQX</span>
+                <span class="stk">aiomqtt</span>
+                <span class="stk">WebSockets</span>
+                <span class="stk">GCP</span>
+                <span class="stk">Pandas</span>
             </div>
 
-            <div class="skills-matrix">
-                <div class="skill-category">
-                    <div class="skill-icon">
-                        <i data-lucide="server" size="20" stroke-width="1.5"></i>
-                    </div>
-                    <h3>Backend Development</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">FastAPI & Flask</div>
-                        <div class="skill-item">RESTful APIs</div>
-                        <div class="skill-item">SQLAlchemy ORM | SQLModel</div>
-                        <div class="skill-item">JWT Authentication</div>
-                        <div class="skill-item">Websockets | SSE</div>
+            <div class="featured-links">
+                <a href="#" class="feat-link primary">
+                    <span>Muestra</span>
+                </a>
+                <a href="https://github.com/realprodigium/risk_follower" class="feat-link secondary">
+                    <span>Repositorio Github</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="capabilities" class="capabilities-section">
+        <div class="section-label">
+            <span class="label-num">[02]</span>
+            <span class="label-tag">Qué puedo hacer</span>
+        </div>
+
+        <h2 class="cap-section-title">No solo conozco las herramientas.<br>Sé cuándo y cómo usarlas.</h2>
+
+        <div class="capabilities-grid">
+            <div class="capability-card">
+                <h3>APIs REST en producción</h3>
+                <p>Diseño, construyo y despliego APIs con autenticación (JWT, OAuth), documentación automática, validación de datos y arquitectura que escala. FastAPI o Django REST.</p>
+                <div class="cap-proof">Demostrado en: API Bookmarks (X OAuth), Sistema CO2 (JWT)</div>
+            </div>
+            <div class="capability-card">
+                <h3>Pipelines de datos ETL</h3>
+                <p>Ingesto, limpio, transformo y cargo datos a cualquier destino. Desde scripts Pandas hasta pipelines en GCP. Manejo datasets de millones de registros sin romper memoria.</p>
+                <div class="cap-proof">Pandas, Data Warehousing, ETL, GCP</div>
+            </div>
+            <div class="capability-card">
+                <h3>Sistemas IoT de punta a punta</h3>
+                <p>Firmware en el dispositivo, broker MQTT en el servidor, API que procesa los mensajes y dashboard que muestra todo en tiempo real. Sin piezas sueltas.</p>
+                <div class="cap-proof">Arduino IDE para ESP32 y Arduino UNO: librerías MQTT y WiFi, manejo de umbrales y alertas</div>
+            </div>
+            <div class="capability-card">
+                <h3>Bases de datos relacionales</h3>
+                <p>Modelo de datos bien diseñado, migraciones, queries optimizados y ORM que no se convierte en un problema de mantenimiento. PostgreSQL + SQLAlchemy</p>
+                <div class="cap-proof">PostgreSQL, MySQL, SQLite (SQLAlchemy ORM)</div>
+            </div>
+            <div class="capability-card">
+                <h3>Tiempo real: WebSockets</h3>
+                <p>Cuando el usuario necesita ver datos vivos sin refrescar la página, construyo la capa de comunicación bidireccional correcta para el caso de uso.</p>
+                <div class="cap-proof">Fastapi Asincrono, Starlette Websockets</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="section-label">
+            <span class="label-num">[03]</span>
+            <span class="label-tag">Otros proyectos</span>
+        </div>
+
+        <div class="projects-list">
+            <div class="project-row">
+                <div class="project-row-left">
+                    <span class="proj-num">01</span>
+                    <div>
+                        <h3>API Bookmarks Storage</h3>
+                        <p>Sistema REST con autenticación via X (OAuth 2.0), CRUD completo, JWT, organización de bookmarks por categorías científicas, de ingeniería y finanzas.</p>
+                        <div class="proj-tags">
+                            <span>FastAPI</span><span>SQLAlchemy</span><span>PostgreSQL</span><span>JWT</span><span>X API</span>
+                        </div>
                     </div>
                 </div>
-
-                <div class="skill-category">
-                    <div class="skill-icon">
-                        <i data-lucide="database" size="20" stroke-width="1.5"></i>
-                    </div>
-                    <h3>Data Engineering | Analysis</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">ETL Pipelines</div>
-                        <div class="skill-item">Power BI</div>
-                        <div class="skill-item">Data Modeling</div>
-                        <div class="skill-item">Data Cleaning & Transformation</div>
-                        <div class="skill-item">Pandas | PySpark</div>
-                        <div class="skill-item">Data Warehousing/Lake</div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="skill-icon">
-                        <i data-lucide="box" size="20" stroke-width="1.5"></i>
-                    </div>
-                    <h3>DevOps & Tools</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">Docker | Docker Compose</div>
-                        <div class="skill-item">Git | GitHub</div>
-                        <div class="skill-item">Windows | Bash</div>
-                        <div class="skill-item">Pytest | test unit</div>
-                        <div class="skill-item">CI/CD Basics</div>
-                    </div>
+                <div class="project-row-right">
+                    <span class="proj-type">Backend API · MVP</span>
+                    <a href="https://github.com/realprodigium/whitebank" target="_blank" class="proj-link">GitHub</a>
                 </div>
             </div>
-        </section>
 
-        <section id="contact" class="section">
-            <div class="section-header">
-                <span class="section-number">[03]</span>
-                <h2 class="section-title">Contacto</h2>
-                <div class="section-line"></div>
-            </div>
-
-            <div class="contact-terminal">
-                <div class="contact-terminal-header">
-                    connect@remote-server:~$
-                </div>
-                <div class="contact-terminal-body">
-                    <div class="terminal-line">
-                        <span class="terminal-prompt">$</span>
-                        <span class="terminal-command">status</span>
-                    </div>
-                    <div class="terminal-line">
-                        <span class="terminal-prompt">></span>
-                        <span style="color: var(--text-secondary);">Disponible</span>
-                    </div>
-                    <div class="terminal-line">
-                        <span class="terminal-prompt">></span>
-                        <span style="color: var(--text-secondary);">Jr Data Engineer | Backend Developer | Jr API Developer</span>
-                    </div>
-                    <div style="height: 20px;"></div>
-                    <div class="terminal-line">
-                        <span class="terminal-prompt">$</span>
-                        <span class="terminal-command">fetch --contact-info</span>
-                    </div>
-                    
-                    <div class="contact-links">
-                        <a href="mailto:tu@email.com" class="contact-link">
-                            <i data-lucide="mail" size="16" class="icon"></i>
-                            <div class="contact-link-text">
-                                <div class="contact-link-label">Email</div>
-                                <div class="contact-link-value">scarrdona@gmail.com</div>
-                            </div>
-                            <i data-lucide="arrow-right" size="16"></i>
-                        </a>
-
-                        <a href="https://github.com/realProdigium" class="contact-link">
-                            <i data-lucide="github" size="16" class="icon"></i>
-                            <div class="contact-link-text">
-                                <div class="contact-link-label">GitHub</div>
-                                <div class="contact-link-value">github.com/realProdigium</div>
-                            </div>
-                            <i data-lucide="arrow-right" size="16"></i>
-                        </a>
-
-                        <a href="https://linkedin.com/in/franchisium" class="contact-link">
-                            <i data-lucide="linkedin" size="16" class="icon"></i>
-                            <div class="contact-link-text">
-                                <div class="contact-link-label">LinkedIn</div>
-                                <div class="contact-link-value">linkedin.com/in/franchisium</div>
-                            </div>
-                            <i data-lucide="arrow-right" size="16" class="icon"></i>
-                        </a>
-
-                        <a href="tel:+573152052580" class="contact-link">
-                            <i data-lucide="phone" size="20" class="icon"></i>
-                            <div class="contact-link-text">
-                                <div class="contact-link-label">Teléfono</div>
-                                <div class="contact-link-value">+57 3152052580</div>
-                            </div>
-                            <i data-lucide="arrow-right" size="16"></i>
-                        </a>
-
-                        <a href="/static/files/CV_Backend_Developer_ES.pdf" class="contact-link" target="_blank">
-                            <i data-lucide="book-user" size="16" class="icon"></i>
-                            <div class="contact-link-text">
-                                <div class="contact-link-label">Curriculum</div>
-                                <div class="contact-link-value">CV | Backend Developer</div>
-                            </div>
-                            <i data-lucide="arrow-right" size="16"></i>
-                        </a>
-
-                        <a href="/static/files/CV_Data_Engineer_ES.pdf" class="contact-link" target="_blank">
-                            <i data-lucide="book-user" size="16" class="icon"></i>
-                            <div class="contact-link-text">
-                                <div class="contact-link-label">Curriculum</div>
-                                <div class="contact-link-value">CV | Data Engineer</div>
-                            </div>
-                            <i data-lucide="arrow-right" size="16"></i>
-                        </a>
+            <div class="project-row">
+                <div class="project-row-left">
+                    <span class="proj-num">02</span>
+                    <div>
+                        <h3>ETL: Crypto Binance</h3>
+                        <p>Pipeline ETL sobre datos de precios de criptomonedas de Binance, listos para análisis.</p>
+                        <div class="proj-tags">
+                            <span>Python</span><span>Pandas</span><span>Seaborn</span><span>Warehousing</span>
+                        </div>
                     </div>
                 </div>
+                <div class="project-row-right">
+                    <span class="proj-type">Data Pipeline · Warehouse</span>
+                    <a href="https://github.com/realprodigium/binance_pipeline" target="_blank" class="proj-link">Notebook</a>
+                </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
-    <footer>
-        <p>S • 2026</p>
+    <section class="tech-section">
+        <div class="section-label">
+            <span class="label-num">[04]</span>
+            <span class="label-tag">Stack técnico</span>
+        </div>
+        <div class="tech-grid">
+            <div class="tech-group">
+                <div class="tech-group-title">Backend</div>
+                <div class="tech-items">
+                    <span>FastAPI</span><span>Flask</span><span>Django</span><span>SQLAlchemy / SQLModel</span><span>JWT</span><span>OAuth 2.0</span><span>WebSockets</span><span>SSE</span><span>REST APIs</span>
+                </div>
+            </div>
+            <div class="tech-group">
+                <div class="tech-group-title">Data</div>
+                <div class="tech-items">
+                    <span>Pandas</span><span>PySpark</span><span>Warehousing</span><span>Power BI</span><span>ETL Pipelines</span><span>Data Modeling</span><span>Seaborn</span>
+                </div>
+            </div>
+            <div class="tech-group">
+                <div class="tech-group-title">Infra & IoT</div>
+                <div class="tech-items">
+                    <span>PostgreSQL</span><span>Supabase</span><span>GCP</span><span>Docker</span><span>VPS</span><span>EMQX</span><span>MQTT / aiomqtt</span><span>Arduino IDE</span>
+                </div>
+            </div>
+            <div class="tech-group">
+                <div class="tech-group-title">DevOps</div>
+                <div class="tech-items">
+                    <span>Git / GitHub</span><span>CI/CD Basics</span><span>Pytest</span><span>Docker Compose</span><span>Ubuntu (Linux) / Bash</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-inner">
+            <div class="contact-left">
+                <div class="section-label">
+                    <span class="label-num">[05]</span>
+                    <span class="label-tag">Contacto</span>
+                </div>
+                <h2 class="contact-title">¿Tienes un<br>sistema que<br>construir?</h2>
+                <p class="contact-sub">Disponible para roles Jr en Backend, Data Engineering o posiciones donde se necesite alguien que entienda el sistema completo.</p>
+            </div>
+            <div class="contact-right">
+                <a href="mailto:scarrdona@gmail.com" class="contact-card">
+                    <span class="contact-card-label">Email</span>
+                    <span class="contact-card-val">scarrdona@gmail.com</span>
+                    <span class="contact-card-arrow">→</span>
+                </a>
+                <a href="https://github.com/realProdigium" target="_blank" class="contact-card">
+                    <span class="contact-card-label">GitHub</span>
+                    <span class="contact-card-val">github.com/realProdigium</span>
+                    <span class="contact-card-arrow">→</span>
+                </a>
+                <a href="https://linkedin.com/in/franchisium" target="_blank" class="contact-card">
+                    <span class="contact-card-label">LinkedIn</span>
+                    <span class="contact-card-val">linkedin.com/in/franchisium</span>
+                    <span class="contact-card-arrow">→</span>
+                </a>
+                <a href="tel:+573152052580" class="contact-card">
+                    <span class="contact-card-label">Teléfono</span>
+                    <span class="contact-card-val">+57 315 205 2580</span>
+                    <span class="contact-card-arrow">→</span>
+                </a>
+                <div class="cv-row">
+                    <a href="/static/files/CV_Backend_Developer_ES.pdf" target="_blank" class="cv-btn">CV Backend Developer →</a>
+                    <a href="/static/files/CV_Data_Engineer_ES.pdf" target="_blank" class="cv-btn">CV Data Engineer →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <span>Sebastián Cardona · 2026</span>
+        <span>Backend & Data Engineering · Colombia</span>
     </footer>
 
-<script src="/index.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
