@@ -60,7 +60,7 @@ body {
   font-family: var(--mono);
   font-weight: 700;
   font-size: 16px;
-  color: var(--amber);
+  color: var(--blue);
   letter-spacing: 0.05em;
 }
 
@@ -81,7 +81,7 @@ body {
 .nav-links a:hover { color: var(--text-1); }
 
 .nav-cta {
-  background: var(--amber) !important;
+  background: var(--blue) !important;
   color: var(--bg) !important;
   padding: 6px 16px;
   border-radius: var(--radius);
@@ -89,7 +89,7 @@ body {
   font-size: 13px !important;
   transition: background 0.2s !important;
 }
-.nav-cta:hover { background: var(--amber-dim) !important; }
+.nav-cta:hover { background: var(--blue-dim) !important; }
 
 .hero {
   min-height: 100vh;
@@ -126,7 +126,7 @@ body {
   position: absolute;
   left: 0; right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, var(--amber), transparent);
+  background: linear-gradient(90deg, transparent, var(--blue), transparent);
   opacity: 0.15;
   animation: scan 6s ease-in-out infinite;
   pointer-events: none;
@@ -193,11 +193,11 @@ body {
 .role-tag {
   font-family: var(--mono);
   font-size: 13px;
-  color: var(--amber);
+  color: var(--blue);
   padding: 4px 12px;
-  border: 1px solid var(--amber-dim);
+  border: 1px solid var(--blue-dim);
   border-radius: 4px;
-  background: var(--amber-glow);
+  background: var(--blue-glow);
   letter-spacing: 0.05em;
 }
 
@@ -222,7 +222,7 @@ body {
 }
 
 .btn-main {
-  background: var(--amber);
+  background: var(--blue);
   color: var(--bg);
   padding: 12px 28px;
   border-radius: var(--radius);
@@ -232,7 +232,7 @@ body {
   transition: background 0.2s, transform 0.2s;
   font-family: var(--body);
 }
-.btn-main:hover { background: var(--amber-dim); transform: translateY(-1px); }
+.btn-main:hover { background: var(--blue-dim); transform: translateY(-1px); }
 
 .btn-ghost {
   color: var(--text-2);
@@ -269,7 +269,7 @@ body {
 .metric-val {
   font-family: var(--display);
   font-size: 36px;
-  color: var(--amber);
+  color: var(--blue);
   line-height: 1;
 }
 
@@ -296,7 +296,7 @@ body {
 .label-num {
   font-family: var(--mono);
   font-size: 12px;
-  color: var(--amber);
+  color: var(--blue);
   font-weight: 700;
   letter-spacing: 0.1em;
 }
@@ -321,7 +321,7 @@ body {
 .featured-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-top: 2px solid var(--amber);
+  border-top: 2px solid var(--blue);
   border-radius: 8px;
   overflow: hidden;
   padding: 48px;
@@ -378,15 +378,15 @@ body {
 .featured-badge {
   flex-shrink: 0;
   padding: 10px 20px;
-  border: 1px solid var(--amber-dim);
-  background: var(--amber-glow);
+  border: 1px solid var(--blue-dim);
+  background: var(--blue-glow);
   border-radius: var(--radius);
 }
 
 .badge-text {
   font-family: var(--mono);
   font-size: 13px;
-  color: var(--amber);
+  color: var(--blue);
   letter-spacing: 0.05em;
   white-space: nowrap;
 }
@@ -444,7 +444,7 @@ body {
 }
 
 .arch-node.hardware .node-name,
-.arch-node.ml .node-name { color: var(--amber); }
+.arch-node.ml .node-name { color: var(--blue); }
 
 .arch-arrow {
   display: flex;
@@ -457,7 +457,7 @@ body {
   flex-shrink: 0;
   padding: 0 4px;
 }
-.arrow-line { color: var(--amber-dim); opacity: 0.5; font-size: 14px; }
+.arrow-line { color: var(--blue-dim); opacity: 0.5; font-size: 14px; }
 
 .featured-capabilities {
   margin-bottom: 40px;
@@ -489,10 +489,10 @@ body {
   transition: border-color 0.2s;
 }
 
-.cap-item:hover { border-color: var(--amber-dim); }
+.cap-item:hover { border-color: var(--blue-dim); }
 
 .cap-check {
-  color: var(--amber);
+  color: var(--blue);
   font-family: var(--mono);
   font-size: 14px;
   font-weight: 700;
@@ -552,10 +552,10 @@ body {
 }
 
 .feat-link.primary {
-  background: var(--amber);
+  background: var(--blue);
   color: var(--bg);
 }
-.feat-link.primary:hover { background: var(--amber-dim); }
+.feat-link.primary:hover { background: var(--blue-dim); }
 
 .feat-link.secondary {
   background: transparent;
@@ -621,10 +621,10 @@ body {
 .cap-proof {
   font-family: var(--mono);
   font-size: 11px;
-  color: var(--amber);
+  color: var(--blue);
   padding: 6px 10px;
-  background: var(--amber-glow);
-  border-left: 2px solid var(--amber);
+  background: var(--blue-glow);
+  border-left: 2px solid var(--blue);
   border-radius: 0 4px 4px 0;
   line-height: 1.5;
 }
@@ -720,14 +720,14 @@ body {
 
 .proj-link {
   font-size: 13px;
-  color: var(--amber);
+  color: var(--blue);
   text-decoration: none;
   font-family: var(--mono);
   font-weight: 500;
   transition: color 0.2s;
   border-bottom: 1px solid transparent;
 }
-.proj-link:hover { border-bottom-color: var(--amber); }
+.proj-link:hover { border-bottom-color: var(--blue); }
 
 .tech-section {
   padding: 80px 40px;
@@ -745,7 +745,7 @@ body {
 .tech-group-title {
   font-family: var(--mono);
   font-size: 11px;
-  color: var(--amber);
+  color: var(--blue);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-weight: 700;
@@ -825,7 +825,7 @@ body {
 }
 
 .contact-card:hover {
-  border-color: var(--amber-dim);
+  border-color: var(--blue-dim);
   transform: translateX(4px);
   background: var(--bg-2);
 }
@@ -854,7 +854,7 @@ body {
 }
 
 .contact-card:hover .contact-card-arrow {
-  color: var(--amber);
+  color: var(--blue);
   transform: translateX(2px);
 }
 
@@ -872,12 +872,12 @@ body {
   border-radius: var(--radius);
   font-size: 13px;
   font-family: var(--mono);
-  color: var(--amber);
+  color: var(--blue);
   text-decoration: none;
   transition: all 0.2s;
-  background: var(--amber-glow);
+  background: var(--blue-glow);
 }
-.cv-btn:hover { border-color: var(--amber-dim); background: var(--amber-glow); }
+.cv-btn:hover { border-color: var(--blue-dim); background: var(--blue-glow); }
 
 .footer {
   border-top: 1px solid var(--border);
